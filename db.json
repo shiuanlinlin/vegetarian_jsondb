@@ -1,0 +1,117 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "jackpot":[
+    {
+      "id": 1,
+      "date": "2019-01-22"
+    }
+  ],
+  "sitestatus": [
+    {
+      "id": 1,
+      "sitecode": "ABC001",
+      "sitename": "GPK",
+      "maintain_sitename": "DEMO",
+      "maintain_time": null,
+      "cdn_setting": {
+        "switch": true,
+        "name": "app",
+        "url": "app.com/cdn"
+      },
+      "type": [
+        "slot",
+        "live",
+        "sport"
+      ],
+      "note": null
+    },
+    {
+      "id": 2,
+      "sitecode": "ABC002",
+      "sitename": "GPK002",
+      "maintain_sitename": "DEMO2",
+      "maintain_time": null,
+      "cdn_setting": {
+        "switch": true,
+        "name": "app",
+        "url": "app.com/cdn"
+      },
+      "type": [
+        "slot",
+        "live",
+        "sport"
+      ],
+      "note": null
+    },
+    {
+      "id": 3,
+      "sitecode": "ABC003",
+      "sitename": "GPK3",
+      "maintain_sitename": "DEMO3",
+      "maintain_time": null,
+      "cdn_setting": {
+        "switch": true,
+        "name": "app",
+        "url": "app.com/cdn"
+      },
+      "type": [
+        "slot",
+        "live",
+        "sport"
+      ],
+      "note": null
+    },
+    {
+      "id": 4,
+      "sitecode": "ABC004",
+      "sitename": "GPK004",
+      "maintain_sitename": "DEMO4",
+      "maintain_time": null,
+      "cdn_setting": {
+        "switch": true,
+        "name": "app",
+        "url": "app.com/cdn"
+      },
+      "type": [
+        "slot",
+        "live",
+        "sport"
+      ],
+      "note": null
+    },
+    {
+      "sitecode": "ADD001",
+      "sitename": "ADDGPK",
+      "maintain_sitename": "addDEMO",
+      "maintain_time": null,
+      "cdn_setting": {
+        "switch": true,
+        "name": "app-add",
+        "url": "app-add.com/cdn"
+      },
+      "type": [
+        "slot",
+        "sport",
+        "fisher"
+      ],
+      "note": null,
+      "id": 5
+    }
+  ]
+}

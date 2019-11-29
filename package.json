@@ -1,0 +1,17 @@
+{
+  "name": "g2manage_jsondb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "devjson": "json-server --c json-server.json db.json",
+    "dev": "json-server --c json-server.json fakerdb.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "faker": "^4.1.0",
+    "json-server": "^0.14.2"
+  }
+}
