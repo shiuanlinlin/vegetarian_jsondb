@@ -14,7 +14,9 @@ function generateSitestatus() {
             "id": id,
             "date": creat_time,
             "name": food_type,
-            "img": foodimg
+            "img": foodimg,
+            "bigimg": 'https://drive.google.com/uc?export=view&id=1NzWlfh9CnG8mCG-2hUhtXHWoO-mPXOKU',
+            "text": "搭配店家特製的義式料理餐點、手工披薩、薄餅、甜點不一樣的蔬食餐廳，無肉也可以很歡樂"
         })
     }
 
