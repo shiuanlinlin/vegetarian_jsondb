@@ -35,7 +35,7 @@ function generateSitestatus() {
             "phone": "0900-000000",
             "add": "高雄市鼓山區瑞豐街87號",
             "opentime": "11:30~21:00(週三、周四公休)",
-            "img": foodimg
+            "img": 'https://drive.google.com/uc?export=view&id=1Ug2wR3PDX09eN1592t21JlVMqaQ7RXCD'
         }) 
     }
 
