@@ -16,9 +16,11 @@ function generateSitestatus() {
             "name": food_type,
             "img": foodimg,
             "bigimg": 'https://drive.google.com/uc?export=view&id=1NzWlfh9CnG8mCG-2hUhtXHWoO-mPXOKU',
-            "text": "搭配店家特製的義式料理餐點、手工披薩、薄餅、甜點不一樣的蔬食餐廳，無肉也可以很歡樂"
+            "text": "搭配店家特製的義式料理餐點、手工披薩、薄餅、甜點不一樣的蔬食餐廳，無肉也可以很歡樂",
+            "hot": ''
         })
     }
+    recommend[0].hot = true;
 
     var blogger = []
     const title_typeArr = ['綠時代素食串燒 ', '菩善蔬圓', '巷左巷右蔬食義大利麵', '嬿評素燒烤食堂', '素食風味外省麵', '宏珍素粽'];
@@ -35,7 +37,8 @@ function generateSitestatus() {
             "phone": "0900-000000",
             "add": "高雄市鼓山區瑞豐街87號",
             "opentime": "11:30~21:00(週三、周四公休)",
-            "img": 'https://drive.google.com/uc?export=view&id=1Ug2wR3PDX09eN1592t21JlVMqaQ7RXCD'
+            "img": 'https://drive.google.com/uc?export=view&id=1Ug2wR3PDX09eN1592t21JlVMqaQ7RXCD',
+            "hot": ''
         }) 
     }
 
