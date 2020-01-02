@@ -26,11 +26,12 @@ function generateSitestatus() {
     const title_typeArr = ['綠時代素食串燒 ', '菩善蔬圓', '巷左巷右蔬食義大利麵', '嬿評素燒烤食堂', '素食風味外省麵', '宏珍素粽'];
     const author_typeArr = ['羅妹妹 ', '王大江', '左右看', '粉紅豬', '泰迪王', '小花公主'];
     for(var id = 1; id < 21; id++){
+        var acreat_time = faker.date.future()
         var title_food_type = title_typeArr[Math.floor(Math.random() * 6)] 
         var author_name = author_typeArr[Math.floor(Math.random() * 6)]
         blogger.push({
             "id": id,
-            "date": creat_time,
+            "date": acreat_time,
             "title": title_food_type,
             "author": author_name,
             "text": "搭配店家特製的義式料理餐點、手工披薩、薄餅、甜點不一樣的蔬食餐廳，無肉也可以很歡樂",
@@ -41,6 +42,7 @@ function generateSitestatus() {
             "hot": ''
         }) 
     }
+    blogger[0].hot = true;
 
     return { 
     "recommend": recommend,
