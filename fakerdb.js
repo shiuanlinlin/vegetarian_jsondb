@@ -47,9 +47,9 @@ function generateSitestatus() {
     //食譜
     var recipe = []
     const recipe_typeArr = ['https://drive.google.com/uc?export=view&id=1XWBuGfjxIdC7p-inK4xosWP7whjW89UG','https://drive.google.com/uc?export=view&id=1PhNDjXkiaK_pz50eyKHzU2qgVHorduci','https://drive.google.com/uc?export=view&id=1wWxTH0puR2bmIrTlaBjuNwf7-g5urJkT'];
-    var recipefoodimg = recipe_typeArr[Math.floor(Math.random() * 3)]  
     for(var id = 1; id < 21; id++){
         var acreat_time = faker.date.future()
+        var recipefoodimg = recipe_typeArr[Math.floor(Math.random() * 3)]  
         var title_food_type = title_typeArr[Math.floor(Math.random() * 6)] 
         var author_name = author_typeArr[Math.floor(Math.random() * 6)]
         recipe.push({
