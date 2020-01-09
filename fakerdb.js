@@ -44,9 +44,30 @@ function generateSitestatus() {
     }
     blogger[0].hot = true;
 
+    //食譜
+    var recipe = []
+    const recipe_typeArr = ['https://drive.google.com/uc?export=view&id=1XWBuGfjxIdC7p-inK4xosWP7whjW89UG','https://drive.google.com/uc?export=view&id=1PhNDjXkiaK_pz50eyKHzU2qgVHorduci','https://drive.google.com/uc?export=view&id=1wWxTH0puR2bmIrTlaBjuNwf7-g5urJkT'];
+    var recipefoodimg = recipe_typeArr[Math.floor(Math.random() * 3)]  
+    for(var id = 1; id < 21; id++){
+        var acreat_time = faker.date.future()
+        var title_food_type = title_typeArr[Math.floor(Math.random() * 6)] 
+        var author_name = author_typeArr[Math.floor(Math.random() * 6)]
+        recipe.push({
+            "id": id,
+            "date": acreat_time,
+            "title": title_food_type,
+            "author": author_name,
+            "text": "搭特製的義式料理餐點、手工披薩、薄餅、甜點不一樣的蔬食餐廳，無肉也可以很歡樂",
+            "img": recipefoodimg,
+            "hot": ''
+        }) 
+    }
+    recipe[0].hot = true;
+
     return { 
     "recommend": recommend,
-    "blogger": blogger
+    "blogger": blogger,
+    "recipe":recipe
     }
 }
 
