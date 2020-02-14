@@ -1,7 +1,8 @@
 var faker = require('faker')
 //faker.locale = "zh_TW";
 function generateSitestatus() {
-    //推薦美食
+    //推薦美食 首頁
+    //補星星 UI
     var recommend = []
     //const foodname_typeArr = ['驚奇鹽酥雞', '疏食牛肉麵', '辣子炸雞腿', '素素烤肉', '三素自助餐', '一品好豆花'];
     const foodname_typeArr = ['Foodname', 'Foodname', 'Foodname', 'Foodname', 'Foodname', 'Foodname'];
@@ -12,16 +13,19 @@ function generateSitestatus() {
         var foodimg = foodimg_typeArr[Math.floor(Math.random() * 5)]     
         recommend.push({
             "id": id,
-            "date": creat_time,
-            "name": food_type,
-            "img": foodimg,
+            "date": creat_time,//日期
+            "title": food_type,//店名
+            "img": foodimg,//店家圖圖片 *沒圖片顯示預設UI
             "bigimg": 'https://drive.google.com/uc?export=view&id=1NzWlfh9CnG8mCG-2hUhtXHWoO-mPXOKU',
+            //店家網站連結
             "text": "搭配店家特製的義式料理餐點、手工披薩、薄餅、甜點不一樣的蔬食餐廳，無肉也可以很歡樂",
+            //簡介
             "hot": ''
+            //預設 true
         })
     }
     recommend[0].hot = true;
-
+    // 推薦美食部落客
     var blogger = []
     const title_typeArr = ['綠時代素食串燒 ', '菩善蔬圓', '巷左巷右蔬食義大利麵', '嬿評素燒烤食堂', '素食風味外省麵', '宏珍素粽'];
     const author_typeArr = ['羅妹妹 ', '王大江', '左右看', '粉紅豬', '泰迪王', '小花公主'];
@@ -31,12 +35,12 @@ function generateSitestatus() {
         var author_name = author_typeArr[Math.floor(Math.random() * 6)]
         blogger.push({
             "id": id,
-            "date": acreat_time,
-            "title": title_food_type,
+            "date": acreat_time,//日期
+            "title": title_food_type,//美食部落客名稱
             "author": author_name,
-            "text": "搭配店家特製的義式料理餐點、手工披薩、薄餅、甜點不一樣的蔬食餐廳，無肉也可以很歡樂",
-            "phone": "0900-000000",
-            "add": "高雄市鼓山區瑞豐街87號",
+            "text": "搭配店家特製的義式料理餐點、手工披薩、薄餅、甜點不一樣的蔬食餐廳，無肉也可以很歡樂",//簡介
+            "phone": "0900-000000",//手機
+            "add": "高雄市鼓山區瑞豐街87號",//地址
             "opentime": "11:30~21:00(週三、周四公休)",
             "img": 'https://drive.google.com/uc?export=view&id=1Ug2wR3PDX09eN1592t21JlVMqaQ7RXCD',
             "hot": ''
